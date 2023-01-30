@@ -13,7 +13,7 @@ StatusCheck $?
 cd /usr/share/nginx/html
 
 echo Removing Old Web Content
-rm -rf * &>>$LOG_FILE
+rm -rf * &>>/tmp/frontend
 StatusCheck $?
 
 echo Extracting Web Content
